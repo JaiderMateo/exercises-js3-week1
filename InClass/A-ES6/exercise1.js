@@ -3,9 +3,16 @@ function arrow() {
   return "es6 is awesome!";
 }
 
+const arrow2 = ()=>{
+  return "es6 is awesome!";
+}
+
 //Use the es6 syntax for default parameter
 function defaultParameter(name) {
   var name = name || "sam";
+  return name;
+}
+function defaultParameter2(name = "sam"){
   return name;
 }
 
@@ -13,6 +20,11 @@ function defaultParameter(name) {
 function combineArrays(arr1, arr2) {
   return arr1.concat(arr2);
 }
+
+function combineArrays2(arr1, arr2){
+  return [...arr1, ...arr2];
+}
+
 
 //use destructuring to return the object's cyf property
 function destructuring(obj) {
@@ -23,3 +35,7 @@ function destructuring(obj) {
 function templateString(a, b) {
   return "The sum is equal to " + (a + b).toString();
 }
+function templateString2(a, b) {
+  return `The sum is equal to ${(a + b)}`;
+}
+console.log(templateString2(2,2));
