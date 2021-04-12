@@ -17,3 +17,12 @@ function greetPeople(people) {
   */
   var mentors = ['Irina', 'Ashleigh', 'Etza'];
   var result = greetPeople(mentors)
+  /*
+  It is going to show:
+  Hello Irina
+  Hello IrinaAshleigh
+  Hello IrinaAshleighEtza
+
+  to fix the problem of the names together we just have to change the line 7 like this:
+  greeting = `${greeting}${person}`;
+  */

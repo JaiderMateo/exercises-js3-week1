@@ -31,6 +31,7 @@ function destructuring(obj) {
   return obj.cyf;
 }
 
+
 // use template literal to return a string with the sum of a and b
 function templateString(a, b) {
   return "The sum is equal to " + (a + b).toString();
@@ -38,4 +39,3 @@ function templateString(a, b) {
 function templateString2(a, b) {
   return `The sum is equal to ${(a + b)}`;
 }
-console.log(templateString2(2,2));
